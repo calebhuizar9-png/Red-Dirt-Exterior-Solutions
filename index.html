@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exterior Property Maintenance | Oklahoma City Metro | Red Dirt Exterior Solutions</title>
+
+  <meta name="description" content="Red Dirt Exterior Solutions provides exterior property maintenance throughout the Oklahoma City metro, including lawn care, pressure washing, property cleanups, painting, staining and more. Call for a free quote.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #050505;
+      border-bottom: 3px solid #c8102e;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+
+    .brand span {
+      color: #d71920;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e3262e;
+    }
+
+    .hero {
+      min-height: 610px;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.96), rgba(0,0,0,.70)),
+        linear-gradient(135deg, #111, #242424);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #ef3038;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.02;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: #e31b23;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 720px;
+      color: #e2e2e2;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .btn-red {
+      background: #d71920;
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: #111;
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 42px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #bdbdbd;
+      font-size: 18px;
+    }
+
+    .services {
+      background: #111;
+    }
+
+    .service-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .service {
+      background: #181818;
+      border: 1px solid #292929;
+      border-top: 4px solid #d71920;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .service h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: #c9c9c9;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      color: #d0d0d0;
+      font-size: 18px;
+    }
+
+    .areas {
+      background: #111;
+      text-align: center;
+    }
+
+    .areas h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .areas p {
+      max-width: 900px;
+      margin: auto;
+      color: #d0d0d0;
+      font-size: 18px;
+    }
+
+    .quote {
+      background: #d71920;
+      text-align: center;
+    }
+
+    .quote h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .quote p {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    .contact-info {
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .contact-info a {
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px 7%;
+      background: #050505;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+
+      .hero {
+        min-height: 520px;
+        padding: 60px 7%;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <span>RED DIRT</span><br>
+    EXTERIOR SOLUTIONS
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#areas">Service Area</a>
+    <a href="#quote">Free Quote</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Oklahoma City Metro
+      </div>
+
+      <h1>
+        Exterior Property <span>Maintenance</span>
+      </h1>
+
+      <p>
+        One local company for the outside of your property.
+        Red Dirt Exterior Solutions provides lawn care, pressure washing,
+        cleanups, painting, staining and other exterior property services
+        throughout the Oklahoma City metro.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-red" href="tel:+15804670087">
+          Call for a Free Quote
+        </a>
+
+        <a class="btn btn-light" href="#services">
+          View Our Services
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services" id="services">
+
+    <div class="section-title">
+      <h2>Exterior Property Services</h2>
+      <p>
+        Residential and property maintenance services to help keep
+        the outside of your property clean, maintained and looking its best.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <h3>Pressure Washing</h3>
+        <p>
+          Exterior cleaning for homes, driveways, sidewalks,
+          patios and other outdoor surfaces.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Lawn Care</h3>
+        <p>
+          Mowing, trimming, edging and general lawn maintenance
+          for properties throughout the OKC metro.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Cleanups & Haul-Offs</h3>
+        <p>
+          Yard cleanups, property cleanouts, debris removal,
+          storm cleanup and exterior haul-off services.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Painting & Staining</h3>
+        <p>
+          Fence and deck staining, exterior painting
+          and other outdoor finishing projects.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Tree & Limb Trimming</h3>
+        <p>
+          Small tree and limb trimming, removal and cleanup
+          for manageable exterior projects.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Other Exterior Projects</h3>
+        <p>
+          Have something else that needs attention outside?
+          Contact us and tell us about your project.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <div class="about">
+      <h2>Red Dirt Exterior Solutions</h2>
+
+      <p>
+        Red Dirt Exterior Solutions is a local exterior property
+        maintenance company serving homeowners, property owners and
+        businesses throughout the Oklahoma City metro. Instead of calling
+        several different companies for smaller exterior projects,
+        our goal is to provide one reliable local company you can call
+        for a wide range of property maintenance needs.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="areas" id="areas">
+
+    <h2>Serving the Oklahoma City Metro</h2>
+
+    <p>
+      Based in the Yukon area and serving customers throughout
+      Yukon, Mustang, Oklahoma City and surrounding metro communities.
+      Contact us to see if we service your property.
+    </p>
+
+  </section>
+
+  <section class="quote" id="quote">
+
+    <h2>Need a Quote?</h2>
+
+    <p>
+      Tell us what you need done and we'll help you figure out the next step.
+    </p>
+
+    <div class="buttons" style="justify-content:center;">
+      <a class="btn btn-light" href="tel:+15804670087">
+        Call (580) 467-0087
+      </a>
+
+      <a class="btn btn-light" href="sms:+15804670087">
+        Text Us
+      </a>
+
+      <a class="btn btn-light" href="mailto:reddirtexteriorsolutions@gmail.com">
+        Email Us
+      </a>
+    </div>
+
+    <div class="contact-info">
+      Red Dirt Exterior Solutions<br>
+      (580) 467-0087<br>
+      reddirtexteriorsolutions@gmail.com
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Red Dirt Exterior Solutions • Oklahoma City Metro Exterior Property Maintenance
+</footer>
+
+</body>
+</html>
